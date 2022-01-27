@@ -135,7 +135,9 @@ img {
 .sidenav li a:hover {
   background: #b07dfb;
 }
-
+.ficar{
+  background: #8844ee;
+}
 @keyframes seta {
   from {
     right: 30px;
@@ -215,6 +217,13 @@ img {
 .imagem-2g{
   grid-row: span 3;
 }
+.imagem-2o{
+  grid-row: auto;
+}
+.imagem-2a{
+  grid-row: span 3;
+}
+
 
 .item-2 {
   align-self: end;
