@@ -205,7 +205,15 @@ img {
   align-self: stretch;
 }
 .imagem-4{
+  grid-row: span 2;
   align-self: center;
+}
+.imagem-4l{
+ 
+  align-self: center;
+}
+.imagem-2g{
+  grid-row: span 3;
 }
 
 .item-2 {
