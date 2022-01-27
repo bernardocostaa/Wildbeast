@@ -200,6 +200,13 @@ img {
   grid-row: span 2;
   align-self: end;
 }
+.imagem-3 {
+  grid-row: span 2;
+  align-self: stretch;
+}
+.imagem-4{
+  align-self: center;
+}
 
 .item-2 {
   align-self: end;
