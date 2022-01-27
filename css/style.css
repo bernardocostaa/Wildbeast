@@ -131,13 +131,14 @@ img {
   box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
   transition: 0.1s ease-out;
 }
+.sidenav li a.ficar{
+  background: #b07dfb;
+}
 
 .sidenav li a:hover {
   background: #b07dfb;
 }
-.ficar{
-  background: #8844ee;
-}
+
 @keyframes seta {
   from {
     right: 30px;
