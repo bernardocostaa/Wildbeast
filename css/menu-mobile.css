@@ -86,6 +86,9 @@
   display: none;
 }
 @media (max-width: 760px) {
+  nav{
+    margin-bottom: 10px;
+  }
   .sidenav {
     position: relative;
     overflow-x: auto;
@@ -137,7 +140,6 @@
   }
   #btn-mobile{
     display: flex;
-    padding: .5rem 1rem;
     font-size: 1rem;
     border: none;
     background: none;
