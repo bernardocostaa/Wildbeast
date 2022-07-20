@@ -12,4 +12,23 @@ function toggleMenu(event){
 
 btnMobile.addEventListener('click',toggleMenu)
 btnMobile.addEventListener('touchstart',toggleMenu)
-  
+
+//texto escreve
+
+function escreveMaquina(elemento){
+  const textoArray = elemento.innerHTML.split('')
+  elemento.innerHTML = '';
+  textoArray.forEach((letra,index) =>{
+    setTimeout(()=>{
+      elemento.innerHTML += letra
+    },150 * index)
+  })
+    
+}
+
+
+  const titulo = document.querySelector('h1')
+  escreveMaquina(titulo)
+
+
+
