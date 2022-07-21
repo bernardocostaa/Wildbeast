@@ -25,10 +25,42 @@ function escreveMaquina(elemento){
   })
     
 }
-
-
   const titulo = document.querySelector('h1')
   escreveMaquina(titulo)
 
 
+  //anima numero
+  function animaNumero(){
+    const numeros = document.querySelectorAll('[data-numero]')
+    numeros.forEach((numero)=>{
+      const total = +numero.innerText
+      console.log(total)
+      const incremento = Math.floor(total / 100)
+      let comeco = 0
+      comeco = comeco + incremento
+      const tempo = setInterval(()=>{
+        comeco++
+        numero.innerText = comeco
+        if(comeco > total){
+        numero.innerText = total
+          clearInterval(tempo)
+        }
+      },100 * Math.random())
+    })
+  }
+  
+
+var ativo = false
+const infosNumeros = document.querySelector('.atributos')
+function scrollAnimar(){
+  const sessaoTop = Math.floor(infosNumeros.getBoundingClientRect().top)
+  // console.log(sessaoTop)
+  if(sessaoTop <= 600 && ativo == false){
+    animaNumero()
+    ativo = true
+  }
+}
+
+
+window.addEventListener('scroll',scrollAnimar)
 
