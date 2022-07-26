@@ -42,11 +42,9 @@ img {
   display: grid;
   grid-template-columns: 3fr 5fr;
 }
-.form-dados{
-  
-}
 .form-info{
   background: #b07dfb;
+  border-radius: 0 8px 8px 0;
   
 }
 .imgs-contato img{
@@ -82,14 +80,32 @@ img {
 .imagem-2a{
   grid-row: span 3;
 }
+.botao{
+  padding: 16px 32px;
+  display: inline-block;
+  max-width: max-content;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+  letter-spacing: 3px;
+}
+.botao:hover{
+  background-color: rgb(29, 26, 26);
 
-@media (max-width: 1200px) {
-  .estrutura {
-    grid-template-areas:
-      'header header header'
-      'sidenav content content'
-      'sidenav anuncios anuncios'
-      'footer footer footer';
+}
+
+@media(max-width:900px){
+  .contato{
+    grid-template-columns: 1fr;
+  }
+  .imgs-contato img{
+    display: none;
   }
 }
 
@@ -124,10 +140,9 @@ img {
   padding: 40px;
   display: grid;
   gap: 25px;
-
 }
 .form label{
-  font: 500 1.1rem/1.5 'Ariel',sans-serif;
+  font: 600 1.1rem/1.5 'Ariel',sans-serif;
   margin-bottom: 5px;
   display: block;
 }
