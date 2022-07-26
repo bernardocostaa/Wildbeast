@@ -60,7 +60,39 @@ function scrollAnimar(){
     ativo = true
   }
 }
-
-
 window.addEventListener('scroll',scrollAnimar)
+
+
+
+//validador de form
+
+let validadorContato = {
+  handleSubmit:(event)=>{
+    event.preventDefault()
+    let enviar = true
+
+    let inputs = form.querySelectorAll('input')
+
+    for(let i=0;i<inputs.length;i++){
+      let input = inputs[i]
+      let checar = validadorContato.checarInput(input)
+      if(checar !== true){
+        enviar = false;
+        //mostrar erro
+      }
+    }
+   
+    if(enviar){
+      form.submit()
+    }
+  },
+  checarInput:(input) =>{
+    
+  }
+};
+
+let form = document.querySelector('.validador-form')
+
+console.log(form);
+form.addEventListener('submit',validadorContato.handleSubmit)
 
