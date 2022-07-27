@@ -72,22 +72,81 @@ let validadorContato = {
     let enviar = true
 
     let inputs = form.querySelectorAll('input')
+    let textArea = form.querySelector('textarea')
+    
+
+    validadorContato.limparErros();
 
     for(let i=0;i<inputs.length;i++){
       let input = inputs[i]
       let checar = validadorContato.checarInput(input)
       if(checar !== true){
         enviar = false;
-        //mostrar erro
+        validadorContato.showErro(input,checar)
       }
     }
-   
     if(enviar){
       form.submit()
     }
   },
   checarInput:(input) =>{
-    
+    let regras = input.getAttribute('data-rules');
+    if(regras !== null){
+      regras = regras.split('|')
+      for(let k in regras){
+        let detalhesRegra = regras[k].split('=')
+        switch(detalhesRegra[0]){
+          case 'required':
+            if(input.value == ''){
+              return 'Campo não pode ser vazio'
+            }
+          break;
+          case 'min':
+            if(input.value.length < detalhesRegra[1]){
+              return 'Campo tem que ter pelomenos '+detalhesRegra[1]+ ' caracteres'
+            }
+            break;
+            case 'email':
+            if(input.value != ''){
+              let regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+              if(!regex.test(input.value.toLowerCase())){
+                return 'E-mail digitado não é valido'
+              }
+            }
+            break;
+            case 'tel':
+                let numero = (/\D/g,' ')
+                if(!+input.value != numero){
+                return 'erro não é um numero'
+              }
+            break;
+        }
+      }
+    }
+    return true
+  },
+  showErro:(input,error) =>{
+    input.style.borderColor = 'red'
+    input.style.boxShadow = ' 0 0 0 2px red';
+   
+
+    let erroElemento = document.createElement('div')
+    erroElemento.classList.add('error')
+    erroElemento.innerHTML = error
+
+    input.parentElement.insertBefore(erroElemento,input.nextElementSibling)
+
+
+  },
+  limparErros:()=>{
+    let inputs = form.querySelectorAll('input')
+    for(let i=0;i<inputs.length;i++){
+      inputs[i].style = ''
+    }
+    let erroElementos = document.querySelectorAll('.error')
+    for(let i =0; i < erroElementos.length;i++) {
+      erroElementos[i].remove()
+    }
   }
 };
 

@@ -59,19 +59,19 @@
          <form class="form validador-form" action="cadastro.php" >
           <div>
             <label for="">Nome</label>
-            <input type="text" name="name" data-rules="required">
-          </div>
-          <div>
-            <label for="">Telefone</label>
-            <input type="text">
+            <input type="text" name="name" data-rules="required|min=2">
           </div>
           <div>
             <label for="">Email</label>
-            <input type="email">
+            <input type="text" name="email" data-rules="required|email">
+          </div>
+          <div>
+            <label for="">Telefone</label>
+            <input type="text" name="cel" data-rules="required|tel">
           </div>
           <div>
             <label for="">Mensagem</label>
-            <textarea name="" id="" rows="5"></textarea>
+            <textarea name="" id="" rows="5" data-rules="required"></textarea>
           </div>
           <button class="botao">Enviar Mensagem</button>
         </form>
