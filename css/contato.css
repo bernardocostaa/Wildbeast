@@ -99,6 +99,10 @@ img {
   background-color: rgb(29, 26, 26);
 
 }
+.textAjuste{
+  display: flex;
+  flex-direction: column;
+}
 .error{
   font-size: 14px;
   background-color: black;
