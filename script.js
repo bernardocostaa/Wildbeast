@@ -85,6 +85,13 @@ let validadorContato = {
         validadorContato.showErro(input,checar)
       }
     }
+    
+      let checarText = validadorContato.checarInput(textArea)
+      if(checarText !== true){
+        enviar = false;
+        validadorContato.showErro(textArea,checarText)
+      }
+    
     if(enviar){
       form.submit()
     }
@@ -120,6 +127,13 @@ let validadorContato = {
                 return 'erro não é um numero'
               }
             break;
+            case 'limit':
+              if(input.value.length < 10){
+                return 'BARRIL ESCREVA MAIS RAPA'
+              
+              }
+            break
+            
         }
       }
     }
@@ -147,6 +161,9 @@ let validadorContato = {
     for(let i =0; i < erroElementos.length;i++) {
       erroElementos[i].remove()
     }
+    let textArea = form.querySelector('textarea')
+   
+    textArea.style = ''
   }
 };
 
