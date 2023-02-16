@@ -1,5 +1,5 @@
 <h1 align="center">
-  Animais Fantasticos
+  Wildbeast
 </h1>
 
 <p align="center">
@@ -24,7 +24,7 @@ Esse projeto está sendo desenvolvido com as seguintes tecnologias:
 
 ## 🚧 Projeto:
 
-Link do Projeto: [Animais Fantasticos](https://bernardocostaa.github.io/surfbot/)
+Link do Projeto: [Wildbeast](https://bernardocostaa.github.io/surfbot/)
 
 
 ## :memo: Licença
