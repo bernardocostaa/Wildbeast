@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="https://bernardocostaa.github.io/surfbot/">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://bernardocostaa.github.io/Wildbeast/">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
@@ -24,12 +24,12 @@ Esse projeto está sendo desenvolvido com as seguintes tecnologias:
 
 ## 🚧 Projeto:
 
-Link do Projeto: [Wildbeast](https://bernardocostaa.github.io/surfbot/)
+Link do Projeto: [Wildbeast](https://bernardocostaa.github.io/Wildbeast/)
 
 
 ## :memo: Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/bernardocostaa/surfbot/blob/main/LICENSE) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://github.com/bernardocostaa/Wildbeast/blob/main/LICENSE) para mais detalhes.
 
 ---
 
