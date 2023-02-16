@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img alt="" src="https://raw.githubusercontent.com/bernardocostaa/surfbot/main/templete.jpg" width="100%">
+  <img alt="" src="https://raw.githubusercontent.com/bernardocostaa/Wildbeast/main/templete2.jpg" width="100%">
 </p>
 
 <p align="center">
