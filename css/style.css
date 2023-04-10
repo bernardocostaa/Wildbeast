@@ -30,7 +30,7 @@ img {
 
 /* GRID GERAL */
 
-.estrutura {
+.grid {
   display: grid;
   grid-template-columns: minmax(160px, 1fr) 3fr 300px;
   grid-template-areas:
@@ -40,7 +40,7 @@ img {
 }
 
 @media (max-width: 1200px) {
-  .estrutura {
+  .grid {
     grid-template-areas:
       'header header header'
       'sidenav content content'
@@ -50,7 +50,7 @@ img {
 }
 
 @media (max-width: 760px) {
-  .estrutura {
+  .grid {
     grid-template-columns: 100%;
     grid-template-areas:
       'header'

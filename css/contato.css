@@ -30,7 +30,7 @@ img {
 
 /* GRID GERAL */
 
-.estrutura {
+.grid {
   display: grid;
   grid-template-columns: minmax(160px, 1fr) 4fr;
   grid-template-areas:
@@ -121,7 +121,7 @@ img {
 }
 
 @media (max-width: 760px) {
-  .estrutura {
+  .grid {
     grid-template-columns: 100%;
     grid-template-areas:
       'header'

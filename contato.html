@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +10,15 @@
   <link rel="stylesheet" href="css/contato.css">
   <title>Contato</title>
 </head>
+
 <body>
-  <div class="estrutura">
+  <div class="grid">
     <header class="header">
       <a href="index.html" class="logo"><img src="img/wildbeast.svg" alt="Wildbeast"></a>
       <nav id="nav">
-       <button id="btn-mobile">
-        <span id="hamburger"></span>
-       </button>
+        <button id="btn-mobile">
+          <span id="hamburger"></span>
+        </button>
         <ul id="menu">
           <li><a href="#">Sobre</a></li>
           <li><a href="#">Animais</a></li>
@@ -40,41 +42,41 @@
         <h1>Entre em Contato</h1>
         <span>Resposta em ate 24 horas</span>
       </div>
-      
+
       <div class="contato conteiner">
         <section class="form-dados">
           <div class="imgs-contato">
-       
-              <img class="contato-img-1" src="img/gato2.jpg" alt="">
-              <img class="contato-img-4" src="img/vaca3.jpg" alt="">
-           
-         
-              <img class="imagem-3" src="img/gato1.jpg" alt="">
-              <img class="contato-img-2" src="img/leao2.jpg" alt="">
-            
-              
+
+            <img class="contato-img-1" src="img/gato2.jpg" alt="">
+            <img class="contato-img-4" src="img/vaca3.jpg" alt="">
+
+
+            <img class="imagem-3" src="img/gato1.jpg" alt="">
+            <img class="contato-img-2" src="img/leao2.jpg" alt="">
+
+
           </div>
         </section>
         <section class="form-info">
-         <form class="form validador-form" action="cadastro.php" >
-          <div>
-            <label for="">Nome</label>
-            <input type="text" name="name" data-rules="required|min=2">
-          </div>
-          <div>
-            <label for="">Email</label>
-            <input type="text" name="email" data-rules="required|email">
-          </div>
-          <div>
-            <label for="">Telefone</label>
-            <input type="text" name="cel" data-rules="required|tel">
-          </div>
-          <div class="textAjuste">
-            <label for="">Mensagem</label>
-            <textarea name="" id="" rows="5" data-rules="required|limit"></textarea>
-          </div>
-          <button class="botao">Enviar Mensagem</button>
-        </form>
+          <form class="form validador-form" action="cadastro.php">
+            <div>
+              <label for="">Nome</label>
+              <input type="text" name="name" data-rules="required|min=2">
+            </div>
+            <div>
+              <label for="">Email</label>
+              <input type="text" name="email" data-rules="required|email">
+            </div>
+            <div>
+              <label for="">Telefone</label>
+              <input type="text" name="cel" data-rules="required|tel">
+            </div>
+            <div class="textAjuste">
+              <label for="">Mensagem</label>
+              <textarea name="" id="" rows="5" data-rules="required|limit"></textarea>
+            </div>
+            <button class="botao">Enviar Mensagem</button>
+          </form>
         </section>
       </div>
     </main>
@@ -86,4 +88,5 @@
   </footer>
   <script src="script.js"></script>
 </body>
+
 </html>
