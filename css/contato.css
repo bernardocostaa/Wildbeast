@@ -38,7 +38,7 @@ img {
     'sidenav content-contato '
     'footer footer';
 }
-.contato{
+.contact{
   display: grid;
   grid-template-columns: 3fr 5fr;
 }
@@ -47,40 +47,39 @@ img {
   border-radius: 0 8px 8px 0;
   
 }
-.imgs-contato img{
+.imgs-contact img{
   border-radius:0px;
   align-self: stretch;
 }
-.contato-img-1{
+.contact-img-1{
   grid-column: 1 /2;
   align-self: stretch;
 }
-.contato-img-2{
+.contact-img-2{
   grid-column: 1 /-1;
   align-self: stretch;
 }
-.contato-img-3{
+.contact-img-3{
   grid-row: 1/3;
   grid-column: 1/3;
 }
-.contato-img-4{
+.contact-img-4{
   grid-row: span 2;
 }
 
-.imagem-4l{
- 
+.img-4l{
   align-self: center;
 }
-.imagem-2g{
+.img-2g{
   grid-row: span 3;
 }
-.imagem-2o{
+.img-2o{
   grid-row: auto;
 }
-.imagem-2a{
+.img-2a{
   grid-row: span 3;
 }
-.botao{
+.btn{
   padding: 16px 32px;
   display: inline-block;
   max-width: max-content;
@@ -95,7 +94,7 @@ img {
   box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
   letter-spacing: 3px;
 }
-.botao:hover{
+.btn:hover{
   background-color: rgb(29, 26, 26);
 
 }
@@ -112,10 +111,10 @@ img {
 }
 
 @media(max-width:950px){
-  .contato{
+  .contact{
     grid-template-columns: 1fr;
   }
-  .imgs-contato img{
+  .imgs-contact img{
     display: none;
   }
 }
@@ -132,13 +131,6 @@ img {
   }
 }
 
-/*HEADER*/
-
-
-
-
-
-/*CONTENT*/
 
 .content-contato {
   max-width: 900px;
@@ -287,7 +279,7 @@ p {
   border-top: 2px solid #b07dfb;
 }
 
-.imgs-contato{
+.imgs-contact{
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100%;
