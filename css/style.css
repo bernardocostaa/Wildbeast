@@ -11,7 +11,7 @@ blockquote {
 }
 
 body {
-  font-family: 'Vollkorn', Georgia, serif;
+  font-family: "Vollkorn", Georgia, serif;
 }
 
 li {
@@ -34,18 +34,18 @@ img {
   display: grid;
   grid-template-columns: minmax(160px, 1fr) 3fr 300px;
   grid-template-areas:
-    'header header header'
-    'sidenav content anuncios'
-    'footer footer footer';
+    "header header header"
+    "sidenav content anuncios"
+    "footer footer footer";
 }
 
 @media (max-width: 1200px) {
   .grid {
     grid-template-areas:
-      'header header header'
-      'sidenav content content'
-      'sidenav anuncios anuncios'
-      'footer footer footer';
+      "header header header"
+      "sidenav content content"
+      "sidenav anuncios anuncios"
+      "footer footer footer";
   }
 }
 
@@ -53,19 +53,13 @@ img {
   .grid {
     grid-template-columns: 100%;
     grid-template-areas:
-      'header'
-      'sidenav'
-      'content'
-      'anuncios'
-      'footer';
+      "header"
+      "sidenav"
+      "content"
+      "anuncios"
+      "footer";
   }
 }
-
-/*HEADER*/
-
-
-
-
 
 /*CONTENT*/
 
@@ -79,8 +73,8 @@ img {
   gap: 30px;
 }
 
-@media(max-width:600px) {
-  .content{
+@media (max-width: 600px) {
+  .content {
     grid-template-columns: auto;
   }
 }
@@ -89,33 +83,30 @@ img {
   grid-column: 1 / -1;
 }
 
-.imagem-1 {
+.image-1 {
   grid-row: span 2;
   align-self: end;
 }
-.imagem-3 {
+.image-3 {
   grid-row: span 2;
   align-self: stretch;
 }
-.imagem-4{
+.image-4 {
   grid-row: span 2;
   align-self: center;
 }
-.imagem-4l{
- 
+.image-4l {
   align-self: center;
 }
-.imagem-2g{
+.image-2g {
   grid-row: span 3;
 }
-.imagem-2o{
+.imagem-2o {
   grid-row: auto;
 }
-.imagem-2a{
+.image-2a {
   grid-row: span 3;
 }
-
-
 .item-2 {
   align-self: end;
 }
@@ -233,7 +224,7 @@ p {
   align-content: start;
   padding: 30px;
   gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 /*FOOTER*/
