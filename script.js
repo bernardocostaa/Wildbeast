@@ -22,15 +22,14 @@ function escreveMaquina(elemento) {
     }, 150 * index);
   });
 }
-const titulo = document.querySelector("h1");
-escreveMaquina(titulo);
+const title = document.querySelector("h1");
+escreveMaquina(title);
 
 //anima numero
 function animaNumero() {
-  const numeros = document.querySelectorAll("[data-numero]");
+  const numeros = document.querySelectorAll("[data-number]");
   numeros.forEach((numero) => {
     const total = +numero.innerText;
-    console.log(total);
     const incremento = Math.floor(total / 100);
     let comeco = 0;
     comeco = comeco + incremento;
@@ -160,6 +159,6 @@ let validadorContato = {
 };
 
 let form = document.querySelector(".validador-form");
-
-console.log(form);
-form.addEventListener("submit", validadorContato.handleSubmit);
+if(form){
+  form.addEventListener("submit", validadorContato.handleSubmit);
+}
