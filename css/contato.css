@@ -241,15 +241,14 @@ p {
   position: relative;
   top: 2px;
 }
-
-.destaque {
+.contrast {
   font-size: 0.875em;
   color: #b07dfb;
   max-width: 16em;
 }
 
-.citacao,
-.atributos {
+.backgroundText,
+.attribute {
   align-self: start;
   padding: 30px;
   border-radius: 5px;
@@ -257,7 +256,7 @@ p {
   background: linear-gradient(135deg, #8844ee, #b07dfb);
 }
 
-.citacao p {
+.backgroundText p {
   font-size: 1.5em;
   font-style: italic;
   text-align: center;
@@ -266,14 +265,14 @@ p {
   margin: 0 auto;
 }
 
-.atributos li {
+.attribute li {
   color: white;
   font-family: Courier, monospace;
   font-size: 1.125em;
   padding: 15px;
 }
 
-.atributos li + li {
+.attribute li + li {
   border-top: 2px solid #b07dfb;
 }
 
