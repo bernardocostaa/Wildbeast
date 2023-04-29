@@ -217,7 +217,7 @@ p {
 
 /*ANUNCIOS*/
 
-.anuncios {
+.adverts {
   grid-area: anuncios;
   background: #fafbfc;
   display: grid;
